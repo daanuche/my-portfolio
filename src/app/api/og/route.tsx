@@ -20,7 +20,7 @@ export async function GET() {
         fontWeight: 500,
         fontSize: 56,
         color: "#7B7B7B",
-        letterSpacing: -1,
+        letterSpacing: 0,
       }}
     >
       Daniel Uche, Engineer
