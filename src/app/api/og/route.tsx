@@ -19,7 +19,7 @@ export async function GET() {
         fontFamily: "Inter Display",
         fontWeight: 500,
         fontSize: 56,
-        color: "#A3A3A3",
+        color: "#7B7B7B",
         letterSpacing: -1,
       }}
     >
