@@ -1,69 +1,94 @@
-import Image from "next/image";
+import NileClaimProject from "@/app/components/nileclaim-project";
+import RealEstateProject from "@/app/components/realestate-project";
+import { IconNigeria } from "nucleo-flags";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      <main className="mx-auto mt-10 w-full max-w-xl px-5 text-[14px]/[24px] font-sans text-black md:mt-20 md:max-w-2xl md:px-7">
+        <header>
+          <p className="font-local text-16px uppercase ">
+            DANIEL UCHE
+            <IconNigeria size={16} className="ml-1 inline-block align-middle" />
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+          <p className=" mb-7 font-local text-black/40">Updated Oct 29, 2026</p>
+        </header>
+
+        <p className="mt-4">
+          Hey, I&apos;m Daniel. I currently work on the Dev team at{" "}
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://nileclaim.com"
             target="_blank"
             rel="noopener noreferrer"
+            className="underline decoration-dotted decoration-gray-400 underline-offset-2 hover:decoration-solid"
           >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
+            Nileclaim.
           </a>
+        </p>
+
+        <p className="mt-4">
+          Previously, I worked as a Comp sci. instructor at{" "}
           <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://digitalbridgeinstitute.com"
             target="_blank"
             rel="noopener noreferrer"
+            className="underline decoration-dotted decoration-gray-400 underline-offset-2 hover:decoration-solid"
           >
-            Documentation
+            Digital Bridge Institute
           </a>
-        </div>
+          {""} in Kano, helping people build their skills and confidence on the
+          web.
+        </p>
+        <p className="mt-4">
+          I love exploring hardware and software to create thoughtful,
+          accessible web experiences. I focus on polished interfaces, meaningful
+          animations, and empathetic product design.
+        </p>
+
+        <p className="mt-4">
+          You can find me on{" "}
+          <a
+            href="https://twitter.com/daan_"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-dotted decoration-gray-400 underline-offset-2 hover:decoration-solid"
+          >
+            X
+          </a>
+          ,{" "}
+          <a
+            href="https://github.com/daan"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-dotted decoration-gray-400 underline-offset-2 hover:decoration-solid"
+          >
+            Github
+          </a>
+          ,{" "}
+          <a
+            href="https://instagram.com/daan"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-dotted decoration-gray-400 underline-offset-2 hover:decoration-solid"
+          >
+            Instagram
+          </a>{" "}
+          or send me an{" "}
+          <a
+            href="mailto:daan@example.com"
+            className="underline decoration-dotted decoration-gray-400 underline-offset-2 hover:decoration-solid"
+          >
+            Email
+          </a>
+          .
+        </p>
       </main>
-    </div>
+
+      <section className="mx-auto mt-10 w-full max-w-xl px-5 text-[14px]/[24px] font-sans text-black md:max-w-2xl md:px-7">
+        <h2 className="mb-2 font-local text-[14px] uppercase">WORK</h2>
+        <NileClaimProject className="mb-4" />
+        <RealEstateProject />
+      </section>
+    </>
   );
 }
