@@ -17,7 +17,7 @@ const departureMono = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://daan-theta.vercel.app/"),
-  title: "Daniel Chibuikem Uche",
+  title: "Daniel Uche",
   description: "Daniel Uche, Engineer - Portfolio",
   openGraph: {
     images: [
