@@ -18,12 +18,12 @@ export async function GET() {
         textAlign: "center",
         fontFamily: "Inter Display",
         fontWeight: 500,
-        fontSize: 60,
-        color: "#171717",
+        fontSize: 56,
+        color: "#A3A3A3",
         letterSpacing: -1,
       }}
     >
-      Daniel Uche, Design Engineer
+      Daniel Uche, Engineer
     </div>,
     {
       width: 1200,

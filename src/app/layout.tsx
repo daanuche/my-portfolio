@@ -18,14 +18,14 @@ const departureMono = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL("https://daan-theta.vercel.app/"),
   title: "Daniel Chibuikem Uche",
-  description: "He/he, Design Engineer. I build things for the web",
+  description: "Daniel Uche, Engineer - Portfolio",
   openGraph: {
     images: [
       {
         url: "/api/og",
         width: 1200,
         height: 630,
-        alt: "Daniel Chibuikem Uche - Design Engineer",
+        alt: "Daniel Uche, Engineer - Portfolio",
       },
     ],
   },
