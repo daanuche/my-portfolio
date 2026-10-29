@@ -16,6 +16,7 @@ const departureMono = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://daan-theta.vercel.app/"),
   title: "Daniel Chibuikem Uche",
   description: "He/he, Design Engineer. I build things for the web",
 };
