@@ -18,7 +18,7 @@ export async function GET() {
         textAlign: "center",
         fontFamily: "Inter Display",
         fontWeight: 500,
-        fontSize: 48,
+        fontSize: 55,
         color: "#1DAF61",
         letterSpacing: -1,
       }}
