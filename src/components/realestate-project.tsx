@@ -3,11 +3,11 @@ export default function RealEstateProject() {
     <div>
       <a
         href="#"
-        className="text-[14px]/[24px] font-medium text-black underline decoration-dotted decoration-gray-400 underline-offset-5 hover:decoration-solid"
+        className=" text-black underline decoration-dotted decoration-gray-400 underline-offset-5 hover:decoration-solid"
       >
         Real Estate Project
       </a>
-      <p className="mt-1 text-[14px]/[24px]">
+      <p className="mt-1 ">
         A modern real estate listing platform built with React and TypeScript.
       </p>
     </div>

@@ -1,29 +1,25 @@
-import NileClaimProject from "@/app/components/nileclaim-project";
-import RealEstateProject from "@/app/components/realestate-project";
-import { IconNigeria } from "nucleo-flags";
+import NileClaimProject from "@/components/nileclaim-project";
+import RealEstateProject from "@/components/realestate-project";
 
 export default function Home() {
   return (
     <>
-      <main className="mx-auto mt-10 w-full max-w-xl px-5 text-[14px]/[24px] font-sans text-black md:mt-20 md:max-w-2xl md:px-7">
+      <main className="mt-10 px-5 font-sans text-black text-wrap-pretty md:mt-20 md:px-7">
         <header>
-          <p className="font-local text-16px uppercase ">
-            DANIEL UCHE
-            <IconNigeria size={16} className="ml-1 inline-block align-middle" />
-          </p>
-          <p className=" mb-7 font-local text-black/40">Updated Oct 29, 2026</p>
+          <p className="mb-1">Daniel Uche</p>
+          <p className=" mb-6 text-black/40">Updated Oct 29, 2026</p>
         </header>
 
+        <p className="mt-2"> I'm a software engineer based in Kano, Nigeria.</p>
         <p className="mt-4">
-          Hey, I&apos;m Daniel. I currently work on the Dev team at{" "}
+          I currently work at
           <a
             href="https://nileclaim.com"
             target="_blank"
             rel="noopener noreferrer"
             className="underline decoration-dotted decoration-gray-400 underline-offset-2 hover:decoration-solid"
-          >
-            Nileclaim.
-          </a>
+          ></a>
+          {""} Nileclaim as a Design Engineer and Co-founder
         </p>
 
         <p className="mt-4">
@@ -84,8 +80,8 @@ export default function Home() {
         </p>
       </main>
 
-      <section className="mx-auto mt-10 w-full max-w-xl px-5 text-[14px]/[24px] font-sans text-black md:max-w-2xl md:px-7">
-        <h2 className="mb-2 font-local text-[14px] uppercase">WORK</h2>
+      <section className="mt-10 px-5 text-[14px]/[24px] font-sans text-black md:px-7">
+        <h2 className="work mb-2">Work</h2>
         <NileClaimProject className="mb-4" />
         <RealEstateProject />
       </section>

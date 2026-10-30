@@ -30,9 +30,17 @@ body {
   color: var(--foreground);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
+
+  font-size: 0.875rem;
+  font-weight: 460;
+  line-height: 1.25rem;
+  letter-spacing: -0.00563rem;
 }
 
 .time {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.work {
   color: rgba(0, 0, 0, 0.4);
 }

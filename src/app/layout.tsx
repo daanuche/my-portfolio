@@ -37,7 +37,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${inter.variable} ${departureMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="mx-auto flex min-h-full w-full max-w-[38rem] flex-col">
+        {children}
+      </body>
     </html>
   );
 }
